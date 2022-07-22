@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter-nbconvert --to html --template lab --theme dark notebooks/index.ipynb
+jupyter-nbconvert --to html --template basic --theme dark notebooks/index.ipynb
 mv notebooks/index.html  index.html
 
 # cd notebooks
@@ -17,25 +17,6 @@ mv notebooks/index.html  index.html
 #    # Move to the Html directory
 #    mv notebooks/"$filename".html  pages/"$filename".html
 
-#    # Convert the Notebook to slides
-#    jupyter-nbconvert --to slides notebooks/"$filename".ipynb --reveal-prefix=reveal.js
-#    # Move to the Slides directory
-#    mv notebooks/"$filename".slides.html  slides/"$filename".html
-
-#    # Convert the Notebook to Markdown
-#    jupyter-nbconvert --to markdown notebooks/"$filename".ipynb
-#    # Move to the Markdown directory
-#    mv notebooks/"$filename".md  markdown/"$filename".md
-
-#    # Convert the Notebook to Pdf
-#    cp Notebooks/"$filename".ipynb src/"$filename".ipynb
-#    cd src
-#    jupyter-nbconvert --to pdf "$filename".ipynb
-
-#    # Move to the html directory
-#    mv "$filename".pdf  ../pdfs/"$filename".pdf
-#    rm "$filename".ipynb
-#    cd ..
 # done
 
 # Push the updates to gh-pages
