@@ -5,9 +5,7 @@ mv notebooks/index.html  index.html
 
 arr=$(find notebooks -iname "*.ipynb" -exec basename {} .ipynb ';')
 for nb in $arr; do
-    # Convert the Notebook to HTML
     jupyter-nbconvert --to html --template classic notebooks/"$nb".ipynb
-    # Move to the Html directory
     mv notebooks/"$nb".html pages/"$nb".html
 done
 
