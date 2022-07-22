@@ -1,5 +1,7 @@
 #!/bin/bash
 
+pip install jupyter
+
 jupyter-nbconvert --to html --template classic notebooks/index.ipynb
 mv notebooks/index.html  index.html
 
