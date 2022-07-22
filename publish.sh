@@ -35,8 +35,8 @@ mv notebooks/index.html  index.html
 #    # Move to the html directory
 #    mv "$filename".pdf  ../pdfs/"$filename".pdf
 #    rm "$filename".ipynb
-   cd ..
-done
+#    cd ..
+# done
 
 # Push the updates to gh-pages
 mkdir -p /tmp/workspace
