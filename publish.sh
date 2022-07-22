@@ -45,6 +45,6 @@ git checkout -B gh-pages
 cp -r /tmp/workspace/* .
 git add -A .
 git commit -m "Update Slides"
-git push origin master gh-pages
-git checkout master
+git push origin main gh-pages
+git checkout main
 rm -rf /tmp/workspace
