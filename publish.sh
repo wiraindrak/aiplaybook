@@ -1,5 +1,5 @@
-jupyter-nbconvert --to html notebooks/Index.ipynb --reveal-prefix=reveal.js
-mv notebooks/Index.html  index.html
+jupyter-nbconvert --to html notebooks/index.ipynb --reveal-prefix=reveal.js
+mv notebooks/index.html  index.html
 
 # cd notebooks
 # arr="*.ipynb"
