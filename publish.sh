@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter-nbconvert --to html --template reveal notebooks/index.ipynb
+jupyter-nbconvert --to html --template lab notebooks/index.ipynb
 mv notebooks/index.html  index.html
 
 # cd notebooks
