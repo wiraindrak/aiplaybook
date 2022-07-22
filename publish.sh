@@ -1,2 +1,2 @@
-jupyter-nbconvert Notebooks/index.ipynb --reveal-prefix=reveal.js
-mv Notebooks/index.html  index.html
+jupyter-nbconvert notebooks/index.ipynb --reveal-prefix=reveal.js
+mv notebooks/index.html  index.html
