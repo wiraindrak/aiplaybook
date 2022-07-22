@@ -23,11 +23,11 @@ mv notebooks/index.html  index.html
 mkdir -p /tmp/workspace
 cp -r * /tmp/workspace/
 git add -A .
-git commit -m "Update Slides"
+git commit -m "update pages"
 git checkout -B gh-pages
 cp -r /tmp/workspace/* .
 git add -A .
-git commit -m "Update Slides"
+git commit -m "update pages"
 git push -f origin main gh-pages
 git checkout main
 rm -rf /tmp/workspace
