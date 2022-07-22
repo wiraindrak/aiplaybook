@@ -1,6 +1,6 @@
 #!/bin/bash
 
-jupyter-nbconvert --to html --template lab --theme dark notebooks/index.ipynb
+jupyter-nbconvert --to html --template classic notebooks/index.ipynb
 mv notebooks/index.html  index.html
 
 # cd notebooks
