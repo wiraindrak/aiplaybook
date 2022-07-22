@@ -1,8 +1,10 @@
+#!/bin/bash
+
 jupyter-nbconvert --to html notebooks/index.ipynb --reveal-prefix=reveal.js
 mv notebooks/index.html  index.html
 
 cd notebooks
-arr="*.ipynb"
+arr=(*.ipynb)
 cd ..
 for f in "${arr[@]}"; do
    # Chop off the extension
